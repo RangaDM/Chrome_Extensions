@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Budget Manager</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="popup.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 10px;
+        background-color: #8F77FF;
+        width: 200px;
+      }
+
+      h2 {
+        font-size: 18px;
+        color: #000000;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      h3 {
+        font-size: 16px;
+        color: #3b3b3b;
+      }
+
+        h4 {
+            font-size: 14px;
+            color: #575656;
+            margin-top: 10px;
+        }
+
+      #amount {
+        width: 190px;
+        margin-right: 10px;
+        color: #000000;
+      }
+
+      input[type="submit"],
+      input[type="button"] {
+        padding: 5px 10px;
+        background-color: #0059b7;
+        color: #000000;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover,
+      input[type="button"]:hover {
+        background-color: #007bff;
+      }
+
+      #notification {
+        display: none;
+        background-color: #f44336;
+        color: #fff;
+        padding: 10px;
+        margin-top: 10px;
+      }
+
+        #div {
+            justify-content: center;
+        }
+    </style>
+  </head>
+  <body>
+    <h2>Budget Manager</h>
+    <h3>Total Spent: <span id="total">0</span></h3>
+    <h3>Remaining amount: <span id="Rlimit">0</span></h3>
+    <h4>Enter Amount</h4>
+    <input id="amount" type="text">
+    <br/><br/>
+    <div id="div">
+
+        <input id="spendAmount" type="submit" value="Spend"/>
+        <input id="resetValues" type="button" value="Reset Values"/>
+    </div>
+    <div id="notification">You have exceeded your budget limit!</div>
+  </body>
+</html>

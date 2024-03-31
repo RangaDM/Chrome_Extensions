@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+
+    "name": "Budget Extension",
+    "description": "This extension will help you manage your budget",
+    "version": "1.0",
+    "icons": {
+        "128": "icon128.png",
+        "48": "icon48.png",
+        "16": "icon16.png"
+    },
+    
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon16.png"
+    },
+
+    "options_page": "options.html",
+
+    "permissions": [
+        "storage",
+        "notifications"
+    ]
+}
